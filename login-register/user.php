@@ -38,7 +38,7 @@
     </div>
     <div class="username"><p>Username: <?php echo $user['username']; ?></p></div>
     <div class="email"><p>Email: <?php echo $user['email']; ?></p></div>
-    <div class="btnlo"><a href="login.php"><button>Logout</button></a></div>
+    <div class="btnlo"><a href="index.php"><button>Logout</button></a></div>
     <div class="contact"><p>ช่องทางการติดต่อ Email : mepmeparking@gmail.com</p></div>
     </div>
 

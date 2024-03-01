@@ -13,45 +13,51 @@
 </head>
 <body>
 <div class="status">
-<h2>Status Display</h2>
+  <div>
+    <h2>วิศวกรรมศาสตร์</h2>
+  </div>
+  <div class="status-right">
+    <p>สถานะที่จอดรถ</p>
+  </div>
 </div>
-<table>
-    <tr>
-        <th>Parking lot ID</th>
-        <th>Zone Name</th>
-        <th>Status</th>
-        <th>Time</th>
-    </tr>
+<div class="grid-container">
+
 
 <?php
-// เชื่อมต่อฐานข้อมูล
+
 session_start();
 include('server.php');
 
-// สร้าง SQL เพื่อดึงข้อมูล
+
 $sql = "SELECT id, zonename, status, time FROM statusCar";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    // แสดงข้อมูลในตาราง
+    
     while($row = $result->fetch_assoc()) {
-        // กำหนดคลาส CSS ของแถวโดยอ้างอิงจากสถานะของ status
+        
         $rowClass = ($row["status"] == "empty") ? "empty" : "full";
         
-        // แสดงข้อมูลในแต่ละแถวของตารางโดยใช้คลาส CSS ที่กำหนดไว้
-        echo "<tr class='$rowClass'>";
-        echo "<td>" . $row["id"] . "</td>";
-        echo "<td>" . $row["zonename"] . "</td>";
-        echo "<td>" . $row["status"] . "</td>";
-        echo "<td>" . $row["time"] . "</td>";
-        echo "</tr>";
+        
+        echo "<div class='grid-item $rowClass'>";
+        echo "<p class='zone-p'>Zone Name: " . $row["zonename"] . "</p>";
+        echo "<p class='status-p'>" . $row["status"] . "</p>";
+        echo "<p class='time-p'>Time: " . $row["time"] . "</p>";
+        echo "</div>";
     }
 } else {
     echo "0 results";
 }
 $conn->close();
 ?>
-</table>
+</div>
+
+<div class="detail">
+  <h3>รายละเอียดสถานะ</h3>
+  <li>หากสถานะ "empty" แสดงว่าที่จอดในขณะนี้กำลังว่าง</li>
+  <li>หากสถานะ "full" แสดงว่าที่จอดในขณะนี้เต็ม</li>
+  <li>ท่านสามารถตรวจสอบตำเเหน่งของที่จอดนั้นๆ เพียงกดที่สถานะที่ท่านต้องการจอด</li>
+</div>
 
 <nav class="nav">
         <a href="home.html" class="nav__link ">

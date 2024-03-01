@@ -144,8 +144,8 @@ form {
 }
 
 .input-group button{
-    background-color: #4d5dfa; /* สีพื้นหลังปุ่มเมื่อรหัสผ่านมองเห็นได้ */
-    color: white; /* สีของข้อความในปุ่มเมื่อรหัสผ่านมองเห็นได้ */
+    background-color: #4d5dfa; 
+    color: white; 
     border-radius: 20px;
     padding-left: 10px;
     padding-right: 10px;
@@ -156,5 +156,4 @@ form {
 .passwordToggle {
     width: 20px;
     height: 20px;
-    
 }

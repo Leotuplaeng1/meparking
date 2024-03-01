@@ -1,8 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "register_db";
+    session_start();
+    include('server.php');
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -10,12 +8,12 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// สร้าง SQL statements สำหรับอัปเดตข้อมูล
+
 $sql = "";
 
-// รับค่าที่ส่งมาจาก URL
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // รับค่าที่ส่งมาทาง POST
+    
     $status11 = $_POST["status11"];
     $status12 = $_POST["status12"];
     $status13 = $_POST["status13"];
@@ -28,7 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-// เพิ่มเงื่อนไขสำหรับแต่ละ ID และ status
 if ($status11 == "empty") {
     $sql .= "UPDATE statuscar SET status='$status11', time=NOW() WHERE id=11;";
 } else {
@@ -83,7 +80,7 @@ if ($status33 == "empty") {
     $sql .= "UPDATE statuscar SET status='$status33'  WHERE id=33;";
 }
 
-// สั่งให้ฐานข้อมูลประมวลผล SQL statements
+
 if ($conn->multi_query($sql) === TRUE) {
     echo "Record updated successfully";
 } else {
