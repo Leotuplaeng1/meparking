@@ -205,8 +205,8 @@ p img {
 }
 
 .eng img {
-    max-width: 100%; /* รูปภาพขยายตามขนาดของหน้าจอ */
-    height: auto; /* รักษาอัตราส่วนของรูปภาพ */
+    max-width: 100%; 
+    height: auto; 
 }
 
 .nav {
@@ -241,10 +241,10 @@ p img {
 }
 
 
-/* CSS สำหรับไอคอนที่มีคลาส "active" */
+
 .nav__link.active {
     background-color: white;
-    border-radius: 0; /* เพิ่มรูปร่างวงกลมให้กับกรอบ */
+    border-radius: 0; 
     color: black;
 }
 

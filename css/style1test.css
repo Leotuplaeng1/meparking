@@ -64,51 +64,98 @@ html body {
     font-family: "Kanit", sans-serif;
 }
 
-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 90%;
-    border: 1px solid #6f6f6f;
-    
-}
 
-th, td {
-    border: 1px solid #cbcbcb;
-    padding: 8px;
-    font-family: "Kanit", sans-serif;
-    font-size: 90%;
-    text-align: center;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-.empty {
+.empty{
     background-color: #adf1ad; /* สีเขียวเมื่อ status เป็น empty */
-    border: 1px solid   #54e883;
-    
+    color: #006400;
 }
 
 .full {
     background-color: #f6a495; /* สีแดงเมื่อ status เป็น full */
-    border: 1px solid #f97878;
+    color: white;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between; /* จัดวางทางขวาและซ้ายของ .status */
+    align-items: center; /* จัดวางให้อยู่ตรงกลางตามแนวดิ่ง */
+    border-bottom:1px solid rgb(1, 1, 97) ;
+    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 13px;
+}
+  
+.status-right p {
+    font-size: 14px;
+    padding-right: 10px;
+    font-weight: 100px;
+    font-family: "Kanit", sans-serif;
+    margin-right: 6px;
+    margin-bottom: 0;
 }
 
 .status h2{
     text-align: center;
-    display: flex;
-    justify-content: left;
-    border-bottom:1px solid rgb(1, 1, 97) ;
     font-size: 27px;
     font-family: "Kanit", sans-serif;
     font-weight: 100px;
     font-style: normal;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    padding-left: 13px;
     border-radius: 0px 0px 0px 0px;
     color: rgb(1, 1, 97);
-    background-color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(144px, 1fr));
+    padding: 0px 10px 10px 10px;
+    gap: 1rem;
+    height: auto;
+    width: auto;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.grid-item {
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px 0px rgb(199, 199, 199);
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.status-p {
+    font-size: 28px;
+    font-family: "Kanit", sans-serif;
+}
+
+.zone-p , .time-p{
+    font-size: 13px;
+    font-family: "Kanit", sans-serif;
+    color: black;
+}
+
+.detail{
+    margin-top: 10px;
+}
+
+.detail h3{
+    font-size: 14px;
+    font-family: "Kanit", sans-serif;
+    margin-left: 10px;
+}
+
+.detail li{
+    font-size: 10px;
+    font-family: "Kanit", sans-serif;
+    margin-left: 10px;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* 3 ช่องพอดีสำหรับหน้าจอเล็ก */
+    }
 }
 
