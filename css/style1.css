@@ -1,0 +1,184 @@
+html body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 244, 244);
+}
+
+.promotion p{
+    font-size: 16px;
+    display: flex;
+    float: right;
+    padding-right: 12px;
+}
+
+.promotion h1 {
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    border-bottom:1px solid rgb(1, 1, 97) ;
+    font-size: 27px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 13px;
+    border-radius: 0px 0px 0px 0px;
+    color: rgb(1, 1, 97);
+    background-color: #fff;
+}
+
+
+.promotion img{
+    width: 100%;
+    text-align: center;
+    padding-top: px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
+ 
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(60, 5, 237, 0.2);
+    background-color: white;
+    display: flex;
+    overflow-x: auto;
+    
+    
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: "Kanit", sans-serif;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+    background-color: #fff;
+    color: rgb(192, 190, 190);
+}
+
+
+/* CSS สำหรับไอคอนที่มีคลาส "active" */
+.nav__link.active {
+    background-color: white;
+    border-radius: 0; /* เพิ่มรูปร่างวงกลมให้กับกรอบ */
+    color: black;
+}
+
+.active__link{
+    color: black;
+}
+
+.nav__link.visited {
+    color: black;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+
+.nav-text {
+    font-family: "Kanit", sans-serif;
+}
+
+.account h2{
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    border-bottom:1px solid rgb(1, 1, 97) ;
+    font-size: 27px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 13px;
+    border-radius: 0px 0px 0px 0px;
+    color: rgb(1, 1, 97);
+    margin-bottom: 30%;
+    background-color: #fff;
+}
+
+
+.username p{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex; /* เพิ่ม */
+    justify-content: left; /* เพิ่ม */
+    align-items: center; /* เพิ่ม */
+    box-shadow: 0px 2px 5px 0px rgb(199, 199, 199);
+}
+
+.email p{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex; 
+    justify-content: left; 
+    align-items: center; 
+    box-shadow: 0px 2px 5px 0px rgb(199, 199, 199);
+}
+
+.btnlo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.account button{
+    background-color: rgb(231, 70, 70);
+    border-radius: 20px;
+    padding: 5px 40px 5px 40px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Kanit", sans-serif;
+    margin-top: 15px;
+    box-shadow: 0px 2px 5px 0px rgb(199, 199, 199);
+    border: none;
+}
+
+.img_account {
+    display: flex;
+    justify-content: center; /* จัดให้ไอคอนอยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้ไอคอนอยู่ตรงกลางแนวตั้ง */
+    height: 100px; /* ปรับขนาดตามที่ต้องการ */
+    margin-bottom: 30%;
+}
+
+.img_account .bi {
+    font-size: 200px; /* ปรับขนาดตามที่ต้องการ */
+    text-align: center;
+}
+
+.block {
+    height: 70px;
+}
+
+.contact p{
+    font-size: 10px; 
+    text-align: center;   
+    margin-top: 20px;
+    color: rgb(169, 169, 169);
+}

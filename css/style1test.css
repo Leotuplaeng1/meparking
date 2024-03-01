@@ -1,0 +1,114 @@
+html body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 244, 244);
+}
+
+
+.promotion img{
+    width: 100%;
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(60, 5, 237, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    overflow-x: auto;
+    
+    
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: "Kanit", sans-serif;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+    color: rgb(192, 190, 190);
+}
+
+
+/* CSS สำหรับไอคอนที่มีคลาส "active" */
+.nav__link.active {
+    background-color: white;
+    border-radius: 0; /* เพิ่มรูปร่างวงกลมให้กับกรอบ */
+    color: black;
+}
+
+.active__link{
+    color: black;
+}
+
+.nav__link.visited {
+    color: black;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+
+.nav-text {
+    font-family: "Kanit", sans-serif;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 90%;
+    border: 1px solid #6f6f6f;
+    
+}
+
+th, td {
+    border: 1px solid #cbcbcb;
+    padding: 8px;
+    font-family: "Kanit", sans-serif;
+    font-size: 90%;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.empty {
+    background-color: #adf1ad; /* สีเขียวเมื่อ status เป็น empty */
+    border: 1px solid   #54e883;
+    
+}
+
+.full {
+    background-color: #f6a495; /* สีแดงเมื่อ status เป็น full */
+    border: 1px solid #f97878;
+}
+
+.status h2{
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    border-bottom:1px solid rgb(1, 1, 97) ;
+    font-size: 27px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 13px;
+    border-radius: 0px 0px 0px 0px;
+    color: rgb(1, 1, 97);
+    background-color: #fff;
+}
+

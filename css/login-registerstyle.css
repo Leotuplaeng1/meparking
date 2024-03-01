@@ -1,0 +1,171 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 244, 244);
+}
+
+body {
+    font-size: 120%;
+    background-color: rgb(244, 244, 244);
+}
+
+.logo img{
+    height: 150px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: -80px;
+}
+
+.header2 {
+    width: 80%;
+    margin: 50px auto 0px;
+    color: black;
+    text-align: center;
+    border-bottom: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10%;
+    font-family: "Inter", sans-serif;
+}
+
+.header {
+    width: 80%;
+    margin: 50px auto 0px;
+    color: black;
+    text-align: center;
+    border-bottom: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30%;
+    font-family: "Inter", sans-serif;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.homeheader {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.homecontent {
+    text-align: center;
+    padding-top: 3rem;
+    width: 100%;
+    background-color: rgb(244, 244, 244);
+    height: 100vh;
+}
+
+.input-group {
+    margin: 10px 0px 40px 0px;
+    background-color: rgb(244, 244, 244);
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #4d5dfa;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 2px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+.success {
+    color: #3c763d;
+    background: #dff9d8;
+    border: 1px solid #3c763d;
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.sign-in {
+    font-size: 14px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.sign-in a{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.input-group1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.sign-up {
+    font-size: 15px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+}
+
+.sign-up a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.input-group button{
+    background-color: #4d5dfa; /* สีพื้นหลังปุ่มเมื่อรหัสผ่านมองเห็นได้ */
+    color: white; /* สีของข้อความในปุ่มเมื่อรหัสผ่านมองเห็นได้ */
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-family: "Inter", sans-serif;
+}
+
+.passwordToggle {
+    width: 20px;
+    height: 20px;
+    
+}
+
+.bx.bx-left-arrow-alt{
+    padding: 5px; 
+    border-radius: 60px; 
+    margin-left: 10px;
+    font-size: 26px;
+    color: rgb(1, 1, 97);
+}
