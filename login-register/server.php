@@ -1,9 +1,9 @@
 <?php 
 
 $servername = "localhost";
-$username = "meparkin_db";
-$password = "313326339_Mep";
-$dbname = "meparkin_db"
+$username = "root";
+$password = "";
+$dbname = "register_db";
 
     // Create Connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);

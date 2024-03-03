@@ -15,7 +15,6 @@
     $result = mysqli_query($conn, $user_query);
     $user = mysqli_fetch_assoc($result);
 
-    // แสดงข้อมูลบนหน้าเว็บ
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -28,6 +28,10 @@
 session_start();
 include('server.php');
 
+if (!isset($_SESSION['username'])) {
+  header('Location: index.php');
+  exit();
+}
 
 $sql = "SELECT id, zonename, status, time FROM statusCar";
 $result = $conn->query($sql);
@@ -40,9 +44,10 @@ if ($result->num_rows > 0) {
         
         
         echo "<div class='grid-item $rowClass'>";
-        echo "<p class='zone-p'>Zone Name: " . $row["zonename"] . "</p>";
+        echo "<p class='id-p'>ID: " . $row["id"] . "</p>";
+        echo "<p class='zone-p'> " . $row["zonename"] . "</p>";
         echo "<p class='status-p'>" . $row["status"] . "</p>";
-        echo "<p class='time-p'>Time: " . $row["time"] . "</p>";
+        echo "<p class='time-p'> " . $row["time"] . "</p>";
         echo "</div>";
     }
 } else {
@@ -54,10 +59,13 @@ $conn->close();
 
 <div class="detail">
   <h3>รายละเอียดสถานะ</h3>
-  <li>หากสถานะ "empty" แสดงว่าที่จอดในขณะนี้กำลังว่าง</li>
-  <li>หากสถานะ "full" แสดงว่าที่จอดในขณะนี้เต็ม</li>
-  <li>ท่านสามารถตรวจสอบตำเเหน่งของที่จอดนั้นๆ เพียงกดที่สถานะที่ท่านต้องการจอด</li>
+  <li>หากสถานะ "Empty" แสดงว่าที่จอดในขณะนี้กำลังว่าง</li>
+  <li>หากสถานะ "Full" แสดงว่าที่จอดในขณะนี้เต็ม</li>
+  <li>เวลาที่แสดงของสถานะ "Empty" คือเวลาที่จอดนั้นว่าง</li>
+  <li>เวลาที่แสดงของสถานะ "Full" คือเวลาที่เริ่มต้นจอด</li>
 </div>
+
+
 
 <nav class="nav">
         <a href="home.html" class="nav__link ">
