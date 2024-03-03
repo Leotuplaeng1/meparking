@@ -26,7 +26,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     margin-top: 10%;
-    font-family: "Inter", sans-serif;
+    font-family: "Kanit", sans-serif;
 }
 
 .header {
@@ -38,7 +38,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     margin-top: 30%;
-    font-family: "Inter", sans-serif;
+    font-family: "Kanit", sans-serif;
 }
 
 form {
@@ -71,7 +71,7 @@ form {
     display: block;
     text-align: left;
     margin: 3px;
-    font-family: "Inter", sans-serif;
+    font-family: "Kanit", sans-serif;
     font-size: 16px;
 }
 
@@ -90,10 +90,11 @@ form {
     color: white;
     background: #4d5dfa;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 50%;
     text-align: center;
-    font-family: "Inter", sans-serif;
+    font-family: "Kanit", sans-serif;
+    box-shadow: 0px 2px 5px 0px rgb(199, 199, 199);
 }
 
 .error {
@@ -105,7 +106,7 @@ form {
     background: #f2dede;
     border-radius: 5px;
     text-align: left;
-    font-family: "Inter", sans-serif;
+    font-family: "Kanit", sans-serif;
     font-size: 16px;
 }
 .success {
@@ -113,13 +114,13 @@ form {
     background: #dff9d8;
     border: 1px solid #3c763d;
     margin-bottom: 20px;
-    font-family: "Inter", sans-serif;
+    font-family: "Kanit", sans-serif;
 }
 
 .sign-in {
     font-size: 14px;
     text-align: center;
-    font-family: "Inter", sans-serif;
+    font-family: "Kanit", sans-serif;
 }
 
 .sign-in a{
@@ -137,7 +138,7 @@ form {
 .sign-up {
     font-size: 15px;
     text-align: center;
-    font-family: "Inter", sans-serif;
+    font-family: "Kanit", sans-serif;
     text-align: left;
 }
 
@@ -153,13 +154,13 @@ form {
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 10px;
-    font-family: "Inter", sans-serif;
+    font-family: "Kanit", sans-serif;
+    box-shadow: 0px 2px 5px 0px rgb(199, 199, 199);
 }
 
 .passwordToggle {
     width: 20px;
     height: 20px;
-    
 }
 
 .bx.bx-left-arrow-alt{
@@ -168,4 +169,14 @@ form {
     margin-left: 10px;
     font-size: 26px;
     color: rgb(1, 1, 97);
+}
+
+
+#password-toggle {
+    float: right;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    background-color: #4d5dfa;
 }

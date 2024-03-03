@@ -69,18 +69,18 @@ html body {
 }
 
 .btnall {
-    background-color: #4d5dfa;
-    color: white;
+    background-color: white;
+    color: rgb(26, 26, 26);
     box-sizing: border-box;
     width: 80%;
-    font-size: 12px;
+    font-size: 16px;
     font-family:Kanit;
-    margin:10px;
+    margin:5px;
     padding: 10px ;
     border-radius: 25px;
-    border: solid #4d5dfa ;
+    border: none;
     margin-top: 30px;
-
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .image {
@@ -264,5 +264,8 @@ p img {
     font-family: "Kanit", sans-serif;
 }
   
-
+.tell {
+    margin-bottom: 60px;
+    font-family: "Kanit", sans-serif;
+}
 

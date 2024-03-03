@@ -136,8 +136,16 @@ html body {
     color: black;
 }
 
+.id-p{
+    font-size: 12px;
+    font-family: "Kanit", sans-serif;
+    color: black;
+    margin-bottom: -3px;
+}
+
 .detail{
     margin-top: 10px;
+    margin-bottom: 70px;
 }
 
 .detail h3{
